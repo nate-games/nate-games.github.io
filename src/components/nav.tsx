@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ReactNode } from "react";
 
 function Button({
@@ -23,15 +24,15 @@ function Navbar() {
     <nav className="fixed z-[5] top-0 w-screen h-16 bg-[#111] shadow-[0_0px_0.625rem_0.25rem_rgba(0,0,0,0.5)]">
       <div className="h-full inline-flex justify-between items-center w-[95%] [&>section]:flex [&>section]:justify-center [&>section]:items-center [&>section]:gap-4">
         <section>
-          <a href="/">
+          <Link to="/">
             <Button className="font-bold">
               <img src="/favicon.png" className="h-5 w-5" />
               nate-games
             </Button>
-          </a>
+          </Link>
         </section>
         <section>
-          <a href="/games">
+          <Link to="/games">
             <Button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +44,8 @@ function Navbar() {
               </svg>
               Games
             </Button>
-          </a>
-          <a href="/dmca">
+          </Link>
+          <Link to="/dmca">
             <Button>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +57,7 @@ function Navbar() {
               </svg>
               DMCA
             </Button>
-          </a>
+          </Link>
           <a
             href="https://github.com/nate-games/nate-games.github.io"
             target="_blank"
