@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "name": "@ns/web",
+  "main": "./index.js",
+  "types": "./index.d.ts"
+}

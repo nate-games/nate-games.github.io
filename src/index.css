@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply bg-[#171717];
+    @apply text-white;
+    @apply text-center;
+    @apply font-roboto;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-black;
+  }
+
+  a {
+    @apply text-[#008bff];
+  }
+}
